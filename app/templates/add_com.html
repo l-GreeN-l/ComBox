@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div id="head_div">
+            <text id="head tittle">Добавить команду: </text>
+        </div>
+        <div id="group_command_div">
+        <br>
+            <div id="command_div">
+                <form action="/save_new/" method="POST">
+                    <label class="for" for="name">Name</label><input id="name" name="name" type="text"  maxlength=100 />
+                    <label class="for" for="pass">Pass</label><textarea id="pass" name="command" type="text"  maxlength=1000 ></textarea>
+                    <br>
+                    <input type="submit" name="save_new" value="Сохранить"></input>
+                </form  >
+
+                    <form  action="/cancel/" method="post">
+                        <button name="cancel" onclick="cancel()" >Отменить</button>
+                    </form>
+            </div>
+        <br>
+    </div>
+{% endblock %}

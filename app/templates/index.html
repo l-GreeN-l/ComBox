@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="head_div">
+        <text id="head tittle">Список тестов: </text>
+        <form id="form_btn_add" style="display:inline-block" action="/add_c/" method="post">
+            <button name="add" onclick="add_c()">Добавить</button>
+        </form>
+    </div>
+    {% for command in commands_list %}
+    <div id="group_command_div">
+        <br>
+        <div id="command_div">
+                <br><br>
+            <form  action="/save/" method="POST">
+                <input type="hidden" name="num" value={{command.id}} readonly="readonly">
+
+                <label class="for" for="name">Name</label><input name="name" type="text", value={{command.name}} maxlength=100 />
+                <label class="for" for="command">Command</label><textarea name="command" type="text"  maxlength=1000 >{{command.command}}</textarea>
+                <input type="submit" name="save" value="Сохранить"/>
+            </form>
+
+            <form action="/run/" method="POST" >
+
+                <input type="hidden" name="num" value={{command.id}} readonly="readonly">
+
+                <input id="login" type="text" name="login" placeholder="Login:" maxlength=100/>
+                <input id="pasw" type="text" name="pasw" placeholder="Password:" maxlength=100/>
+                <input type="submit" name="run" value="Запустить"/>
+
+            </form>
+
+            <form style="display:inline-block" action="/del/" method="POST">
+<!--                <button name="del" onclick="del()">Удалить</button>-->
+                <button name="del" >Удалить</button>
+                <input type="hidden" name="num" value={{command.id}} readonly="readonly">
+            </form>
+
+        </div>
+        <br>
+    </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+

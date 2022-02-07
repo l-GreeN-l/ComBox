@@ -1,0 +1,146 @@
+
+div[id="head_div"]
+{
+    height: 70px;
+    background: #0e1638;
+}
+
+text[id="head tittle"]
+{
+    position: absolute;
+    left: 70px;
+    top: 18px;
+    color: white;
+    height: 40px;
+    font-family: Bradley Hand, cursive;
+    font-size: 40px;
+
+}
+
+button[name="add"]
+{
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    background: orange;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+
+    position: absolute;
+    right: 70px;
+    top: 25px;
+
+}
+
+
+
+div[id="group_command_div"]
+{
+    background: white;
+}
+
+
+div[id="command_div"]
+{
+    background: #babdcc;
+    border-radius: 20px 20px 20px 20px;
+}
+
+input[name="name"]
+{
+    text-align:center;
+}
+
+input[type="text"]{
+    color: black;
+    width: 100px;
+    height: 25px;
+    border: 1px solid #999;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    color: grey;
+    width: 800px;
+    height: 20px;
+    border: 1px solid #999;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+input[name="save"]
+{
+
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    background: orange;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+input[name="run"]
+{
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    background: orange;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 675px;
+
+}
+
+
+button[name="del"]
+{
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    background: orange;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-right: 100px;
+    margin-left: 925px;
+    float:left;
+}
+
+
+
+label[class="for"]
+{
+    cursor: pointer;
+    display: block;
+    margin-left: 15px;
+}
+
+input[name="save_new"]
+{
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    background: orange;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+button[name="cancel"]
+{
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    background: orange;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 50px;
+    style="display:inline-block"
+}
+
+
+
+
